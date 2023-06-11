@@ -1,6 +1,5 @@
 package com.example.taskmanager
 
-import android.graphics.Paint.Align
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -49,20 +48,20 @@ fun TaskManager(modifier: Modifier = Modifier) {
         Image(
             painter = image,
             contentDescription = null,
-            modifier = Modifier
+            modifier = modifier
                 .align(Alignment.CenterHorizontally)
         )
         Text(
             text = stringResource(R.string.all_tasks_completed),
             fontWeight = FontWeight.Bold,
-            modifier = Modifier
+            modifier = modifier
                 .padding(top = 24.dp, bottom = 8.dp)
                 .align(Alignment.CenterHorizontally)
         )
         Text(
             text = stringResource(R.string.nice_work),
             fontSize = 16.sp,
-            modifier = Modifier
+            modifier = modifier
                 .align(Alignment.CenterHorizontally)
         )
     }
